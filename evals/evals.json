@@ -1,0 +1,45 @@
+{
+  "skill": "karpathy-output",
+  "test_cases": [
+    {
+      "name": "code_dump_to_diagram",
+      "input": "Codex me dejó 4000 líneas y un diseño de colas. No voy a leerlo. Quiero saber quién llama a quién.",
+      "assertions": [
+        "Picks rung 2 (diagram), not another essay",
+        "Produces a Mermaid diagram with verb edge labels",
+        "Lists claims to verify against the source",
+        "Does not invent nodes absent from the source"
+      ]
+    },
+    {
+      "name": "vague_explanation_to_ste",
+      "input": "Reescribe esta explicación del modelo para que se pueda revisar. Está llena de sinónimos y frases largas.",
+      "assertions": [
+        "Uses ~80% ASD-STE100: 20/25 word caps, no progressive or passive in procedures",
+        "Applies dictionary swaps (ensure→MAKE SURE, utilize→USE, prior to→BEFORE)",
+        "Does not add facts outside the source",
+        "Output language matches the user"
+      ]
+    },
+    {
+      "name": "parameter_claim_to_html",
+      "input": "El modelo dice que si subo la temperatura de 0.2 a 1.0 el resultado cambia. Quiero probarlo, no leerlo.",
+      "assertions": [
+        "Builds one self-contained HTML file",
+        "Includes controls and a live or revealed output",
+        "States what the page does not prove",
+        "Does not require a build step or CDN"
+      ]
+    },
+    {
+      "name": "algorithm_to_video_plan",
+      "input": "Haz un video estilo 3blue1brown de cómo funciona attention. No hace falta render si no puedes.",
+      "assertions": [
+        "Delivers a shot list, not a fake rendered video",
+        "Each shot has duration, visual, one narration sentence, label",
+        "Notes that rendering needs a video tool or API key",
+        "Ends with claims that still need a source check"
+      ]
+    }
+  ]
+}

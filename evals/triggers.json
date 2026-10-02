@@ -1,0 +1,33 @@
+{
+  "skill": "karpathy-output",
+  "test_cases": [
+    {
+      "input": "No voy a leer el dump del modelo. Pásalo a un diagrama o a una página interactiva.",
+      "should_trigger": true
+    },
+    {
+      "input": "Usa el método de Karpathy: STE100, diagrama, HTML o video para entender esta salida.",
+      "should_trigger": true
+    },
+    {
+      "input": "Explícame este paper en ASD-STE100 al 80%, no en un ensayo.",
+      "should_trigger": true
+    },
+    {
+      "input": "Quiero un video explicativo estilo 3b1b de este algoritmo a partir de lo que escribió el modelo.",
+      "should_trigger": true
+    },
+    {
+      "input": "Resume este artículo en cinco bullets.",
+      "should_trigger": false
+    },
+    {
+      "input": "Escribe un skill nuevo para facturas.",
+      "should_trigger": false
+    },
+    {
+      "input": "Traduce este párrafo al inglés.",
+      "should_trigger": false
+    }
+  ]
+}
